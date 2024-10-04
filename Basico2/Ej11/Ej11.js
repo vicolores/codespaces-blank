@@ -26,7 +26,6 @@ for (let i = 0; i < frase.length; i++) {
         break;
     }
     vocales.push(frase[i]); // Agregamos la vocal encontrada al array
-    contador++; // Incrementamos el contador de vocales
   }
 }
 
