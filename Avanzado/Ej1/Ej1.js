@@ -9,15 +9,17 @@ pedirá la nueva contraseña.
 confirm(): El confirm()método muestra un cuadro de diálogo con un mensaje, un botón Aceptar y un botón Cancelar. El confirm()método retorna true si el usuario hizo clic en "Aceptar", en caso contrario false.
 */
 let contrasena = "";
-let contrasenaUsuario = "a";
+let contrasenaUsuario = "";
+let siNo = false;
+
 
 do {
-  contrasena = confirm(prompt("Introduce la contraseña"));
-} while (contrasena === false);
+  contrasena = prompt("Introduce la contraseña");
+  siNo = confirm("¿Estás de acuerdo con la contraseña?");
+} while (siNo === false);
 
-while (contrasena !== contrasenaUsuario) {
-    contrasenaUsuario = prompt("Introduce la contraseña a comprobar");
-    break;
-}
+do {
+  contrasenaUsuario = prompt("Introduce la contraseña a comprobar");
+} while (contrasena !== contrasenaUsuario);
 
-
+alert("Contraseña correcta");
