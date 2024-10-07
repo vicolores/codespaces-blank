@@ -8,13 +8,13 @@ let datosUsuario = [];
 
 while (true) {
     let input = prompt("Introduce algo:");
-    
+
     if (input.toLowerCase() === "salir") {
         break;
     }
-    
+
     datosUsuario.push(input);
 
 }
 
-document.write("Todos los mensajes escritos: <br>" + datosUsuario.join("<br>"));
+document.write("Todos los mensajes escritos: <br>" + datosUsuario.join("<br>"));<br>"));
